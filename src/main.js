@@ -5,7 +5,6 @@ import store from './store'
 
 // 注册全局过滤器
 import filters from '@/utils/filter'
-console.log(filters)
 for (const key in filters) {
   Vue.filter(key, filters[key])
 }
